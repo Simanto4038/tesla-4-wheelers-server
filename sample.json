@@ -1,6 +1,8 @@
+[
 {
     "name": "WRANGLER",
     "slogan": "UNMATCHED CAPABILITY",
+    "icon":"https://i.ibb.co/z6PWfnN/wagner-Icon.jpg",
     "banner1": "https://i.ibb.co/r6KNypC/Banner102.jpg",
     "banner1hdr":"80 YEARS OF OPEN-AIR FREEDOM",
     "bannerdes1": "The 2021 Jeep Wrangler offers the Most Ways to Experience Open Air Freedom with an available removable Freedom Top® hardtop, an easy-to-lower standard Sunrider® soft top, an available Sky One-Touch roof, plus a fold-down windshield and removable doors",
@@ -22,5 +24,10 @@
     "detail2":"Stay connected when you are on the move. The Uconnect™ 4 with 7-inch touchscreen features Apple CarPlay support, Android Auto™, Bluetooth® Streaming Audio and integrated Voice Command.",
     "detailhdr3":"PARKSENSE® REAR PARK ASSIST",
     "detailpic3":"https://i.ibb.co/hCPmLFF/detail103.jpg",
-    "detail3":"The ParkSense® Rear Park Assist System uses sonar sensors located in the rear bumper to detect obstacles behind you. It will sound an alert when you get close to a potential hazard when parallel parking or backing into a parking spot."
-}
+    "detail3":"The ParkSense® Rear Park Assist System uses sonar sensors located in the rear bumper to detect obstacles behind you. It will sound an alert when you get close to a potential hazard when parallel parking or backing into a parking spot.",
+    "galalry103":"https://i.ibb.co/567vWjj/gallary103.jpg",
+    "gallary101":"https://i.ibb.co/RBhGccc/gallary101.jpg",
+    "gallary102":"https://i.ibb.co/ws4YT4x/gallary102.jpg",
+    "gallary104":"https://i.ibb.co/kqzTssc/gallary104.jpg",
+    "gallary105":"https://i.ibb.co/PzMCCXj/gallary105.jpg"
+}]

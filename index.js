@@ -9,7 +9,7 @@ const email = require('mongodb').email;
 const port = process.env.PORT || 5000;
 const cors = require('cors');
 var bodyParser = require('body-parser');
-
+app.use(cors())
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.bbopj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
@@ -60,6 +60,15 @@ app.get('/', (req, res) => {
       app.get('/allcatagogy', async (req, res) => {
 
       const result =  allVhclCollection.find({});
+      const users = await result.toArray()
+      res.send(users)
+      })
+      app.get('/allcatagogy/:id', async (req, res) => {
+           
+        const id = req.params.id;
+        console.log(id);
+        const quary = { _id: ObjectId(id)}
+      const result =  allVhclCollection.find(quary);
       const users = await result.toArray()
       res.send(users)
       })
