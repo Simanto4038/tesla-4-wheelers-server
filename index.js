@@ -41,6 +41,7 @@ app.get('/', (req, res) => {
       const slider1Collection = database.collection("slider");
       const commentDataCollection = database.collection("Comments");
       const  orderCollection = database.collection("USERoRDER");
+      const  testDriveCollection = database.collection("TESTDRIVE");
      
 
       
@@ -120,6 +121,22 @@ app.get('/', (req, res) => {
             app.get('/comment', async (req, res) => {
 
         const result = commentDataCollection.find({});
+        const users = await result.toArray()
+        res.send(users)
+           })
+
+         app.post("/testdrive",async(req,res)=>
+         {
+           const newcomment = req.body;
+           console.log('Send to DB',req.body);
+           const result = await  testDriveCollection.insertOne(newcomment);
+           console.log(`A comment was inserted with the _id: ${result.insertedId}`);
+           res.json(result)
+         })
+        
+            app.get('/testdrive', async (req, res) => {
+
+        const result = testDriveCollection.find({});
         const users = await result.toArray()
         res.send(users)
            })
