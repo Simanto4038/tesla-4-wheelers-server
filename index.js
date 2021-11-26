@@ -133,8 +133,18 @@ app.get('/', (req, res) => {
            console.log(`A comment was inserted with the _id: ${result.insertedId}`);
            res.json(result)
          })
+       //////post admin
+
+         app.post("/admin",async(req,res)=>
+         {
+           const newcomment = req.body;
+           console.log('Send to DB',req.body);
+           const result = await  testDriveCollection.insertOne(newcomment);
+           console.log(`A comment was inserted with the _id: ${result.insertedId}`);
+           res.json(result)
+         })
         
-            app.get('/testdrive', async (req, res) => {
+            app.get('/admin', async (req, res) => {
 
         const result = testDriveCollection.find({});
         const users = await result.toArray()
